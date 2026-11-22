@@ -1,0 +1,70 @@
+.cart {
+  position: relative;
+  display: inline-flex;
+}
+.cart span {
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.about-hero .card h1 {
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.wrap .section-title {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 48px 0 39px;
+}
+
+.mission .card {
+  height: 600px;
+}
+
+footer {
+  position: relative;
+}
+footer a {
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #f0960f;
+}
+footer a.active {
+  color: #f0960f;
+}
+footer .copy {
+  position: absolute;
+  right: 24px;
+  bottom: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #bbb;
+}
+
+@media (max-width: 760px) {
+  .about-hero .card h1 {
+    font-size: 36px;
+  }
+  .wrap .section-title {
+    font-size: 36px;
+    padding: 28px 0 20px;
+  }
+  .mission .card {
+    height: 480px;
+  }
+  footer .copy {
+    position: static;
+  }
+}

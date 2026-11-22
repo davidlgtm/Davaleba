@@ -1,0 +1,100 @@
+.cart {
+  position: relative;
+  display: inline-flex;
+}
+.cart span {
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.form-card h1 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.form-card .sub {
+  margin-bottom: 70px;
+}
+.form-card form {
+  gap: 24px;
+}
+.form-card form input,
+.form-card form textarea {
+  height: 44px;
+}
+.form-card form .btn {
+  margin-top: 0;
+}
+
+.phone {
+  position: relative;
+}
+.phone input {
+  padding-left: 48px;
+}
+.phone .flag {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+}
+.phone .flag svg {
+  width: 18px;
+  height: 18px;
+  stroke: #000;
+  fill: none;
+  stroke-width: 1.2;
+}
+.phone .flag svg.chev {
+  width: 12px;
+  height: 12px;
+}
+
+footer {
+  position: relative;
+  min-height: 420px;
+  align-content: start;
+}
+footer a {
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: #f0960f;
+}
+footer .copy {
+  position: absolute;
+  right: 24px;
+  bottom: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #bbb;
+}
+footer .copy a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .form-card h1 {
+    font-size: 36px;
+  }
+  .form-card .sub {
+    margin-bottom: 40px;
+  }
+  footer {
+    min-height: 0;
+  }
+  footer .copy {
+    position: static;
+  }
+}

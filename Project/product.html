@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product | D. Mitra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="logo" href="index.html">D. Mitra</a>
+      <div class="right">
+        <a href="#" aria-label="Search"
+          ><svg viewBox="0 0 20 20">
+            <circle cx="9" cy="9" r="6" />
+            <path d="M13.5 13.5L18 18" /></svg
+        ></a>
+        <a class="account" href="#">Log In</a>
+        <a href="#" aria-label="Cart">
+          <svg viewBox="0 0 20 20">
+            <path d="M4 6h12l1 12H3z" />
+            <path d="M7 6V5a3 3 0 0 1 6 0v1" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <div class="pbar">
+        <div class="pcrumbs">
+          <a href="index.html">Home</a><span>&rsaquo;</span
+          ><a href="shop.html">All Products</a><span>&rsaquo;</span
+          ><a id="crumb" href="#"></a>
+        </div>
+        <div class="pnav">
+          <a id="prev" href="#"><span class="chev">&lsaquo;</span> Prev</a>
+          <i></i>
+          <a id="next" href="#">Next <span class="chev">&rsaquo;</span></a>
+        </div>
+      </div>
+
+      <div class="pgrid">
+        <div class="pimg"><img id="pimg" src="" alt="" /></div>
+
+        <div class="pinfo">
+          <h1 id="pname"></h1>
+          <div class="pprice" id="pprice"></div>
+
+          <div id="optbox"></div>
+
+          <label class="plabel" for="qty">Quantity *</label>
+          <div class="stepper">
+            <button type="button" id="minus" aria-label="Decrease quantity">
+              &minus;
+            </button>
+            <span id="qty">1</span>
+            <button type="button" id="plus" aria-label="Increase quantity">
+              +
+            </button>
+          </div>
+
+          <button class="cart" type="button" id="cart">Add to Cart</button>
+
+          <div class="share">
+            <a href="#" aria-label="Facebook"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2a10 10 0 0 0-1.6 19.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 12 2z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="Pinterest"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"
+                /></svg
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.8"
+              >
+                <path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5L3 21z" />
+                <path
+                  d="M9 8.5c.3 2.8 2.7 5.2 5.5 5.5l1.2-1.3-2-1-.9.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.9-1-2L9 8.5z"
+                  fill="#fff"
+                  stroke="none"
+                /></svg
+            ></a>
+            <a href="#" aria-label="X"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.3-8.3L2 3h6.3l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.3 4.7H5.4l11.3 14.5z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+
+        <p class="pdesc" id="pdesc"></p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="big">D. Mitra</div>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <ul class="policies">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+      <div class="contact-info">
+        <p>123-456-7890<br />info@mysite.com</p>
+        <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">ig</a
+          ><a href="#" aria-label="Facebook">f</a
+          ><a href="#" aria-label="LinkedIn">in</a
+          ><a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+    </footer>
+    <p class="copy">
+      &copy; 2035 by D. Mitra. Powered and secured by
+      <a href="https://www.wix.com/" target="_blank" rel="noopener">Wix</a>
+    </p>
+
+    <script>
+      const products = [
+        {
+          name: "Ultra HD Smart TV",
+          price: "$599.00",
+          img: "./Photos/Another TV.avif",
+          desc: "A stunning 4K Ultra HD Smart TV with voice control and streaming capabilities.",
+          opt: { label: "Size (optional)", options: ["55 inch", "65 inch"] },
+        },
+        {
+          name: "Multi-Functional Blender",
+          price: "$89.00",
+          img: "./Photos/88aac0_4c192b134813409589bcc163c86745e3~mv2_jpg_v1_fit_w_1024,h_1024,q_90_file.avif",
+          desc: "A powerful multi-functional blender for smoothies, soups and sauces, with an easy-to-clean jug.",
+          opt: { label: "Power (optional)", options: ["500W", "700W"] },
+        },
+        {
+          name: "Stylish Smartwatch",
+          price: "$199.00",
+          img: "./Photos/Smart Watch.avif",
+          desc: "A stylish smartwatch that tracks your activity, shows your notifications and keeps you connected all day.",
+          opt: {
+            label: "Color (optional)",
+            options: ["Black", "Rose Gold", "White"],
+          },
+        },
+        {
+          name: "Noise Cancelling Earbuds",
+          price: "$89.00",
+          img: "./Photos/Air Pods.avif",
+          desc: "Wireless noise cancelling earbuds with a compact charging case and clear, immersive sound.",
+          opt: { label: "Color (optional)", options: ["Black", "White"] },
+        },
+        {
+          name: "Compact Air Fryer",
+          price: "$129.00",
+          img: "./Photos/Air Fryer.avif",
+          desc: "A compact air fryer that cooks crispy meals with little or no oil, with a digital display for easy control.",
+          opt: { label: "Capacity (optional)", options: ["2.5L", "5L"] },
+        },
+        {
+          name: "Portable Power Bank",
+          price: "$39.00",
+          img: "./Photos/Powe Bank.avif",
+          desc: "A portable power bank with multiple USB ports to charge your devices on the go.",
+          opt: {
+            label: "Capacity (optional)",
+            options: ["10000mAh", "20000mAh"],
+          },
+        },
+        {
+          name: "Smart Kitchen Scale",
+          price: "$49.00",
+          img: "./Photos/Weighter.avif",
+          desc: "A smart kitchen scale with Bluetooth and a clear digital display for precise measuring.",
+          opt: null,
+        },
+        {
+          name: "Compact Smart TV",
+          price: "$299.00",
+          img: "./Photos/Again Another TV.avif",
+          desc: "A compact Smart TV with a sharp display and built-in streaming apps, ideal for smaller rooms.",
+          opt: null,
+        },
+        {
+          name: "Premium 75-Inch TV",
+          price: "$1,299.00",
+          img: "./Photos/TV.avif",
+          desc: "A premium 75-inch Smart TV with a big, vivid screen for a true cinema experience at home.",
+          opt: null,
+        },
+      ];
+
+      let id = parseInt(new URLSearchParams(location.search).get("p"), 10);
+      if (!(id >= 1 && id <= products.length)) id = 1;
+      const p = products[id - 1];
+
+      document.title = p.name + " | D. Mitra";
+      document.getElementById("crumb").textContent = p.name;
+      document.getElementById("crumb").href = "product.html?p=" + id;
+      document.getElementById("pname").textContent = p.name;
+      document.getElementById("pprice").textContent = p.price;
+      document.getElementById("pdesc").textContent = p.desc;
+      const img = document.getElementById("pimg");
+      img.src = p.img;
+      img.alt = p.name;
+
+      if (p.opt) {
+        document.getElementById("optbox").innerHTML =
+          '<label class="plabel" for="opt">' +
+          p.opt.label +
+          "</label>" +
+          '<select id="opt"><option value="">Select</option>' +
+          p.opt.options.map((o) => "<option>" + o + "</option>").join("") +
+          "</select>";
+      }
+
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+      if (id > 1) prev.href = "product.html?p=" + (id - 1);
+      else prev.classList.add("off");
+      if (id < products.length) next.href = "product.html?p=" + (id + 1);
+      else next.classList.add("off");
+
+      let qty = 1;
+      const qtyEl = document.getElementById("qty");
+      document.getElementById("minus").onclick = () => {
+        if (qty > 1) qtyEl.textContent = --qty;
+      };
+      document.getElementById("plus").onclick = () => {
+        if (qty < 99) qtyEl.textContent = ++qty;
+      };
+
+      const cart = document.getElementById("cart");
+      cart.onclick = () => {
+        cart.textContent = "Added to Cart";
+        setTimeout(() => (cart.textContent = "Add to Cart"), 1500);
+      };
+    </script>
+  </body>
+</html>

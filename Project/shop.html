@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Products | D. Mitra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="logo" href="index.html">D. Mitra</a>
+      <div class="right">
+        <a href="#" aria-label="Search"
+          ><svg viewBox="0 0 20 20">
+            <circle cx="9" cy="9" r="6" />
+            <path d="M13.5 13.5L18 18" /></svg
+        ></a>
+        <a class="account" href="#">Log In</a>
+        <a href="#" aria-label="Cart">
+          <svg viewBox="0 0 20 20">
+            <path d="M4 6h12l1 12H3z" />
+            <path d="M7 6V5a3 3 0 0 1 6 0v1" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="shop-page">
+      <div class="crumbs">
+        <a href="index.html">Home</a><span>&rsaquo;</span
+        ><a href="shop.html">All Products</a>
+      </div>
+      <h1>All Products</h1>
+
+      <div class="shop">
+        <aside class="side">
+          <h2>Browse by</h2>
+          <ul class="cats">
+            <li><a href="#all" data-cat="all">All Products</a></li>
+            <li><a href="#kitchen" data-cat="kitchen">Kitchen Gadgets</a></li>
+            <li>
+              <a href="#personal" data-cat="personal">Personal Devices</a>
+            </li>
+            <li><a href="#tvs" data-cat="tvs">Smart TVs</a></li>
+          </ul>
+
+          <h2 class="filter-title">Filter by</h2>
+
+          <div class="fgroup">
+            <button class="fhead" type="button" aria-expanded="false">
+              Price
+            </button>
+            <div class="fbody">
+              <div class="finner">
+                <div class="fpad">
+                  <div class="range">
+                    <input
+                      type="range"
+                      min="39"
+                      max="1299"
+                      value="39"
+                      aria-label="Minimum price"
+                    />
+                    <input
+                      type="range"
+                      min="39"
+                      max="1299"
+                      value="1299"
+                      aria-label="Maximum price"
+                    />
+                  </div>
+                  <div class="range-labels">
+                    <span>$39</span><span>$1,299</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <button class="fhead" type="button" aria-expanded="false">
+              Capacity
+            </button>
+            <div class="fbody">
+              <div class="finner">
+                <div class="fpad">
+                  <label class="chk"
+                    ><input type="checkbox" /><span>10000mAh</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>2.5L</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>20000mAh</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>5L</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <button class="fhead" type="button" aria-expanded="false">
+              Color
+            </button>
+            <div class="fbody">
+              <div class="finner">
+                <div class="fpad">
+                  <label class="chk"
+                    ><input type="checkbox" /><span>Black</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>Rose Gold</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>White</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <button class="fhead" type="button" aria-expanded="false">
+              Power
+            </button>
+            <div class="fbody">
+              <div class="finner">
+                <div class="fpad">
+                  <label class="chk"
+                    ><input type="checkbox" /><span>500W</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>700W</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <button class="fhead" type="button" aria-expanded="false">
+              Size
+            </button>
+            <div class="fbody">
+              <div class="finner">
+                <div class="fpad">
+                  <label class="chk"
+                    ><input type="checkbox" /><span>55 inch</span></label
+                  >
+                  <label class="chk"
+                    ><input type="checkbox" /><span>65 inch</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="results">
+          <div class="bar">
+            <span class="count" id="count">9 products</span>
+            <label class="sort"
+              >Sort by:
+              <select>
+                <option>Recommended</option>
+                <option>Price (low to high)</option>
+                <option>Price (high to low)</option>
+                <option>Name (A-Z)</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="items">
+            <a class="item" data-cat="tvs" href="product.html?p=1"
+              ><div class="pic">
+                <img src="./Photos/Another TV.avif" alt="Ultra HD Smart TV" />
+              </div>
+              <div>Ultra HD Smart TV</div>
+              <div class="price">$599.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="kitchen"
+              data-kitchen="3"
+              href="product.html?p=2"
+              ><div class="pic">
+                <img
+                  src="./Photos/88aac0_4c192b134813409589bcc163c86745e3~mv2_jpg_v1_fit_w_1024,h_1024,q_90_file.avif"
+                  alt="Multi-Functional Blender"
+                />
+              </div>
+              <div>Multi-Functional Blender</div>
+              <div class="price">$89.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="personal"
+              data-personal="3"
+              href="product.html?p=3"
+              ><div class="pic">
+                <img src="./Photos/Smart Watch.avif" alt="Stylish Smartwatch" />
+              </div>
+              <div>Stylish Smartwatch</div>
+              <div class="price">$199.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="personal"
+              data-personal="2"
+              href="product.html?p=4"
+              ><div class="pic">
+                <img
+                  src="./Photos/Air Pods.avif"
+                  alt="Noise Cancelling Earbuds"
+                />
+              </div>
+              <div>Noise Cancelling Earbuds</div>
+              <div class="price">$89.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="kitchen"
+              data-kitchen="1"
+              href="product.html?p=5"
+              ><div class="pic">
+                <img src="./Photos/Air Fryer.avif" alt="Compact Air Fryer" />
+              </div>
+              <div>Compact Air Fryer</div>
+              <div class="price">$129.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="personal"
+              data-personal="1"
+              href="product.html?p=6"
+              ><div class="pic">
+                <img src="./Photos/Powe Bank.avif" alt="Portable Power Bank" />
+              </div>
+              <div>Portable Power Bank</div>
+              <div class="price">$39.00</div></a
+            >
+            <a
+              class="item"
+              data-cat="kitchen"
+              data-kitchen="2"
+              href="product.html?p=7"
+              ><div class="pic">
+                <img src="./Photos/Weighter.avif" alt="Smart Kitchen Scale" />
+              </div>
+              <div>Smart Kitchen Scale</div>
+              <div class="price">$49.00</div></a
+            >
+            <a class="item" data-cat="tvs" href="product.html?p=8"
+              ><div class="pic">
+                <img
+                  src="./Photos/Again Another TV.avif"
+                  alt="Compact Smart TV"
+                />
+              </div>
+              <div>Compact Smart TV</div>
+              <div class="price">$299.00</div></a
+            >
+            <a class="item" data-cat="tvs" href="product.html?p=9"
+              ><div class="pic">
+                <img src="./Photos/TV.avif" alt="Premium 75-Inch TV" />
+              </div>
+              <div>Premium 75-Inch TV</div>
+              <div class="price">$1,299.00</div></a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="big">D. Mitra</div>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <ul class="policies">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+      <div class="contact-info">
+        <p>123-456-7890<br />info@mysite.com</p>
+        <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">ig</a
+          ><a href="#" aria-label="Facebook">f</a
+          ><a href="#" aria-label="LinkedIn">in</a
+          ><a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const links = document.querySelectorAll(".cats a");
+      const items = document.querySelectorAll(".item");
+      const count = document.getElementById("count");
+      const groups = document.querySelectorAll(".fgroup");
+
+      function showCategory(cat) {
+        let n = 0;
+        items.forEach((item) => {
+          const match = cat === "all" || item.dataset.cat === cat;
+          item.hidden = !match;
+          item.style.order =
+            cat !== "all" && item.dataset[cat] ? item.dataset[cat] : "";
+          if (match) n++;
+        });
+        count.textContent = n + (n === 1 ? " product" : " products");
+      }
+
+      function setGroup(group, open) {
+        group.classList.toggle("open", open);
+        group.querySelector(".fhead").setAttribute("aria-expanded", open);
+      }
+
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const cat = link.dataset.cat;
+          showCategory(cat);
+          if (cat === "all") groups.forEach((g) => setGroup(g, false));
+          history.replaceState(
+            null,
+            "",
+            location.pathname + (cat === "all" ? "" : "#" + cat),
+          );
+        });
+      });
+
+      groups.forEach((group) => {
+        group.querySelector(".fhead").addEventListener("click", () => {
+          setGroup(group, !group.classList.contains("open"));
+        });
+      });
+
+      const start = location.hash.slice(1);
+      showCategory(
+        ["kitchen", "personal", "tvs"].includes(start) ? start : "all",
+      );
+    </script>
+  </body>
+</html>
